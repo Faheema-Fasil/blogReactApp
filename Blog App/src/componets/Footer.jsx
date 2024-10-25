@@ -16,6 +16,9 @@ function Footer() {
         <li> <Link to="/posts/categories/:Weather">Weather</Link></li>
 
       </ul>
+      <div className="footer_copyright">
+        <small>All Right Reserved &copy; Copyright, EGATOR Tutorials.</small>
+      </div>
     </footer>
   )
 }
