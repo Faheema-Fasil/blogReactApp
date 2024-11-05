@@ -319,6 +319,17 @@ input,button ,select,textarea{
     color: var(--color-primary);
 }
 
+/* custom style for react quill */
+.ql-editor{
+    overflow: scroll;
+    background: var(--color-white);
+    height: 10rem !important;
+}
+
+
+
+
+
 /* -------------Authors---------------- */
 .authors__container{
     display: grid;
@@ -353,6 +364,15 @@ input,button ,select,textarea{
     display: grid;
     place-items: center;
     text-align: center;
+    
+}
+.my-posts{
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.my-posts:hover{
+    background: var(--color-gray-100);
 }
 .profile__details{
     width:100%;
@@ -404,3 +424,85 @@ input,button ,select,textarea{
     margin-inline: auto;
     width: var(--form-width);
 }
+
+
+
+
+/* ==========Dashboard================ */
+.dashboard__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.dashboard__post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--color-white);
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--radius-3);
+}
+
+.dashboard__post-info{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+.dashboard__post-thumbnail{
+    width: 4rem;
+    border-radius: var(--radius-1);
+    overflow: hidden;
+}
+.dashboard__post-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+/* ===========media queries (small devices)================= */
+
+@media screen and(max-width:800px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    .container{
+        width: var(--container-width-md);
+    }
+    /* NAVBAR */
+    .nav__container{
+        position: relative;
+    }
+    .nav__menu{
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav__menu li{
+        width: 100%;
+        box-shadow: -2rem 4rem 4rrem rgba(0,0,00,0.26);
+
+    }
+    .nav__menu li a{
+        display: block;
+        background: var(--color-white);
+        padding: 0.85rem 2.5rem;
+    }
+    .nav_toggle-btn{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+

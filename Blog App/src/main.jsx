@@ -17,6 +17,7 @@ import EditPost from './Pages/EditPost.jsx';
 import Logout from './Pages/Logout.jsx';
 import Home from './Pages/Home.jsx';
 import Login from './Pages/Login.jsx';
+import DeletePost from './Pages/DeletePost.jsx';
 const router=createBrowserRouter([
   {
     path:"/",
@@ -34,6 +35,7 @@ const router=createBrowserRouter([
       {path:"posts/users/:id",element:<AuthorPosts/>},
       {path:"myposts/:id",element:<Dashboard/>},
       {path:"posts/:id/edit",element:<EditPost/>},
+      {path:"posts/:id/delete",element:<DeletePost/>},
       {path:"logout",element:<Logout/>},
 
     ]
