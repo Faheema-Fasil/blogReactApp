@@ -22,7 +22,7 @@ function Login() {
        <form className='form login_form'>
         <p className='form__error-message'>This is an error message</p>
 
-        <input type="email" placeholder='Email Id' name="email" value={userData.email} onChange={changeInputHandler}  />
+        <input type="email" placeholder='Email Id' name="email" value={userData.email} onChange={changeInputHandler} autoFocus />
         <input type="password" placeholder='Password' name="password" value={userData.password} onChange={changeInputHandler}  />
 
         <button type='submit' className='btn primary'>Login</button>
